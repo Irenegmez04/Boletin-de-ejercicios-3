@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class Ej2 {
+public class Ejercicio1 {
 
     public static void main(String[] args) {
 
@@ -12,8 +12,6 @@ public class Ej2 {
 
         if (edad >= 18) {
             System.out.println("Eres mayor de edad");
-        } else {
-            System.out.println("Eres menor de edad");
         }
 
         teclado.close();
