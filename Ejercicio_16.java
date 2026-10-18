@@ -6,6 +6,7 @@ public class Ejercicio_16 {
 
     public static void main(String[] args) {
 
+
         Scanner teclado = new Scanner(System.in);
 
         double precioBase = 0;
@@ -29,7 +30,7 @@ public class Ejercicio_16 {
 
         // Comprueba que la opción sea un número entero
         if (!teclado.hasNextInt()) {
-            System.out.println("Error: Opción de pase no válida.");
+            System.out.println("Error: Opción de pase no válida. Fin del programa.");
             return;
         }
 
@@ -50,7 +51,7 @@ public class Ejercicio_16 {
                 precioBase = 80.00;
                 break;
             default:
-                System.out.println("Error: Opción de pase no válida.");
+                System.out.println("Error: Opción de pase no válida. Fin del programa.");
                 return;
         }
 
@@ -72,10 +73,10 @@ public class Ejercicio_16 {
             // Los menores de 4 años entran gratis
             System.out.println("TICKET MEDAC PARK");
             System.out.println("Pase: " + nombrePase);
-            System.out.println("Precio base: " + precioBase + " €");
+            System.out.printf("Precio base: %.2f €%n", precioBase);
             System.out.println("Categoría: Bebé");
             System.out.println("Entrada gratuita");
-            System.out.println("IMPORTE FINAL: 0.0 €");
+            System.out.printf("IMPORTE FINAL: %.2f €%n", 0.0);
             return;
 
         } else if (edad <= 12) {
@@ -187,15 +188,15 @@ public class Ejercicio_16 {
         // Muestra el ticket final
         System.out.println("TICKET MEDAC PARK");
         System.out.println("Pase: " + nombrePase);
-        System.out.println("Precio base: " + precioBase + " €");
+        System.out.printf("Precio base: %.2f €%n", precioBase);
         System.out.println("Categoría: " + categoriaEdad);
-        System.out.println("Descuento por edad: -" + descuentoEdad + " €");
+        System.out.printf("Descuento por edad: -%.2f €%n", descuentoEdad);
         System.out.println("Día de visita: " + nombreDia);
         System.out.println("Ajuste del día: " + ajusteCalendario);
-        System.out.println("Importe ajuste día: " + ajusteDia + " €");
+        System.out.printf("Importe ajuste día: %.2f €%n", ajusteDia);
         System.out.println("Familia numerosa: " + familiaNumerosa);
-        System.out.println("Descuento familia: -" + descuentoFamilia + " €");
-        System.out.println("IMPORTE FINAL: " + precioFinal + " €");
+        System.out.printf("Descuento familia: -%.2f €%n", descuentoFamilia);
+        System.out.printf("IMPORTE FINAL: %.2f €%n", precioFinal);
 
         teclado.close();
     }
