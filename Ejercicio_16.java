@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 // Irene Gómez García - 18/10/2026
@@ -5,7 +6,6 @@ import java.util.Scanner;
 public class Ejercicio_16 {
 
     public static void main(String[] args) {
-
 
         Scanner teclado = new Scanner(System.in);
 
@@ -73,10 +73,10 @@ public class Ejercicio_16 {
             // Los menores de 4 años entran gratis
             System.out.println("TICKET MEDAC PARK");
             System.out.println("Pase: " + nombrePase);
-            System.out.printf("Precio base: %.2f €%n", precioBase);
+            System.out.println("Precio base: " + precioBase + " €");
             System.out.println("Categoría: Bebé");
             System.out.println("Entrada gratuita");
-            System.out.printf("IMPORTE FINAL: %.2f €%n", 0.0);
+            System.out.println("IMPORTE FINAL: 0.0 €");
             return;
 
         } else if (edad <= 12) {
@@ -188,15 +188,15 @@ public class Ejercicio_16 {
         // Muestra el ticket final
         System.out.println("TICKET MEDAC PARK");
         System.out.println("Pase: " + nombrePase);
-        System.out.printf("Precio base: %.2f €%n", precioBase);
+        System.out.println("Precio base: " + precioBase + " €");
         System.out.println("Categoría: " + categoriaEdad);
-        System.out.printf("Descuento por edad: -%.2f €%n", descuentoEdad);
+        System.out.println("Descuento por edad: -" + descuentoEdad + " €");
         System.out.println("Día de visita: " + nombreDia);
         System.out.println("Ajuste del día: " + ajusteCalendario);
-        System.out.printf("Importe ajuste día: %.2f €%n", ajusteDia);
+        System.out.println("Importe ajuste día: " + ajusteDia + " €");
         System.out.println("Familia numerosa: " + familiaNumerosa);
-        System.out.printf("Descuento familia: -%.2f €%n", descuentoFamilia);
-        System.out.printf("IMPORTE FINAL: %.2f €%n", precioFinal);
+        System.out.println("Descuento familia: -" + descuentoFamilia + " €");
+        System.out.println("IMPORTE FINAL: " + precioFinal + " €");
 
         teclado.close();
     }
