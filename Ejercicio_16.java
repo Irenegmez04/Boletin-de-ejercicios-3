@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Locale;
 
 // Irene Gómez García - 18/10/2026
 
@@ -73,10 +72,10 @@ public class Ejercicio_16 {
             // Los menores de 4 años entran gratis
             System.out.println("TICKET MEDAC PARK");
             System.out.println("Pase: " + nombrePase);
-            System.out.printf(Locale.US, "Precio base: %.2f €%n", precioBase);
+            System.out.println("Precio base: " + precioBase + " €");
             System.out.println("Categoría: Bebé");
             System.out.println("Entrada gratuita");
-            System.out.printf(Locale.US, "IMPORTE FINAL: %.2f €%n", 0.00);
+            System.out.println("IMPORTE FINAL: 0.0 €");
             return;
 
         } else if (edad <= 12) {
@@ -188,15 +187,15 @@ public class Ejercicio_16 {
         // Muestra el ticket final
         System.out.println("TICKET MEDAC PARK");
         System.out.println("Pase: " + nombrePase);
-        System.out.printf(Locale.US, "Precio base: %.2f €%n", precioBase);
+        System.out.println("Precio base: " + precioBase + " €");
         System.out.println("Categoría: " + categoriaEdad);
-        System.out.printf(Locale.US, "Descuento por edad: -%.2f €%n", descuentoEdad);
+        System.out.println("Descuento por edad: -" + descuentoEdad + " €");
         System.out.println("Día de visita: " + nombreDia);
         System.out.println("Ajuste del día: " + ajusteCalendario);
-        System.out.printf(Locale.US, "Importe ajuste día: %+.2f €%n", ajusteDia);
+        System.out.println("Importe ajuste día: " + ajusteDia + " €");
         System.out.println("Familia numerosa: " + familiaNumerosa);
-        System.out.printf(Locale.US, "Descuento familia: -%.2f €%n", descuentoFamilia);
-        System.out.printf(Locale.US, "IMPORTE FINAL: %.2f €%n", precioFinal);
+        System.out.println("Descuento familia: -" + descuentoFamilia + " €");
+        System.out.println("IMPORTE FINAL: " + precioFinal + " €");
 
         teclado.close();
     }
